@@ -1,0 +1,26 @@
+{
+  "name": "test-monitoring",
+  "author": "Daria Graf",
+  "version": "1.0.0",
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-mocha": "^10.2.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.3",
+    "sinon": "^17.0.1"
+  },
+  "scripts": {
+    "husky:prepare": "husky install",
+    "code:format": "lint-staged",
+    "tests:unit": "mocha"
+  },
+  "lint-staged": {
+    "*.(js|json)": [
+      "prettier --write"
+    ],
+    "*.js": [
+      "eslint --fix"
+    ]
+  }
+}

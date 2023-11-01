@@ -1,0 +1,22 @@
+node_modules
+/dist
+
+# local env files
+.env
+.npmrc
+
+# log files
+npm-debug.log*
+
+# IDE directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.iml
+*.ipr
+*.iws
