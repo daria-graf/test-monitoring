@@ -14,17 +14,18 @@ module.exports = {
     'padding-line-between-statements': [
       'error',
       { blankLine: 'always', prev: '*', next: 'function' },
-      { blankLine: 'always', prev: 'function', next: '*' },
+      { blankLine: 'always', prev: 'function', next: '*' }
     ],
     'mocha/no-skipped-tests': 'error',
     'mocha/no-exclusive-tests': 'error',
-    'mocha/no-mocha-arrows': 'off',
+    'mocha/no-mocha-arrows': 'off'
   },
   parserOptions: {
     ecmaVersion: 'latest',
+    sourceType: 'module'
   },
   env: {
     node: true,
-    es6: true,
-  },
+    es6: true
+  }
 };
