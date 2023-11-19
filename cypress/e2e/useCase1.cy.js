@@ -6,7 +6,7 @@ describe('Commands', () => {
 
   it('navigates to Viewport', () => {
     cy.visit('https://example.cypress.io/commands/viewport');
-    cy.contains('Viewport');
+    cy.contains('Viewports');
   });
 
   it('navigates to Location', () => {

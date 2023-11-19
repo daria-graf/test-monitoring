@@ -5,6 +5,10 @@ module.exports = defineConfig({
     // eslint-disable-next-line no-unused-vars
     setupNodeEvents(on, config) {
       // implement node event listeners here
+    },
+    retries: {
+      runMode: 1,
+      openMode: 0
     }
   }
 });

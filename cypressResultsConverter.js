@@ -5,7 +5,7 @@ export function CypressResultsConverter() {
   const testResult = new ResultsConverter();
 
   /**
-   * @param {import("@cypress").CypressCommandLine.CypressRunResult |import("cypress").CypressCommandLine.CypressFailedRunResult } result
+   * @param {import("@cypress/cli/types/cypress-npm-api").CypressCommandLine.CypressRunResult | import("@cypress/cli/types/cypress-npm-api").CypressRunResult.CypressFailedRunResult } result
    */
   function translateTestResultToMetrics(result) {
     testResult.testName = result.reporter;

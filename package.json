@@ -2,6 +2,7 @@
   "name": "test-monitoring",
   "author": "Daria Graf",
   "version": "1.0.0",
+  "type": "module",
   "devDependencies": {
     "eslint": "^8.52.0",
     "eslint-config-prettier": "^9.0.0",

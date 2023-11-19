@@ -1,14 +1,23 @@
-const cypress = require('cypress');
+
+import CypressRunner from './cypressRunner.js';
 
 (async() => {
-  const results = await cypress.run({
-    spec: './cypress/e2e/useCase1.cy.js'
-  });
+  let result;
 
-  if (results.status === 'failed') {
-    console.error('Cypress could not run');
-  } else {
-    console.log('results.runs', results?.runs);
-    // convert result to prometheus and send them to grafana
+  try {
+    result = await CypressRunner.run('./cypress/e2e/useCase1.cy.js');
+  } catch (error){
+    console.log(error.message || error);
+    process.exit(1);
   }
+
+  console.log('bla');
+
+  if (!result){
+    process.exit(1);
+  }
+
+  console.log('result', result);
+ 
+  
 })();
