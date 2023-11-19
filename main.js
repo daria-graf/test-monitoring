@@ -1,5 +1,5 @@
 
-import CypressRunner from './cypressRunner.js';
+const CypressRunner = require('./cypressRunner.js');
 
 (async() => {
   let result;
