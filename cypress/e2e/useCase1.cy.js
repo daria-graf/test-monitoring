@@ -4,12 +4,12 @@ describe('Commands', () => {
     cy.contains('Window');
   });
 
-  it('navigates to Viewport', () => {
+  it('navigates to Viewport - failed', () => {
     cy.visit('https://example.cypress.io/commands/viewport');
     cy.contains('Viewports');
   });
 
-  it('navigates to Location', () => {
+  it('navigates to Location - skipped', () => {
     cy.visit('https://example.cypress.io/commands/location');
     cy.contains('Location');
   });
