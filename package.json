@@ -19,7 +19,7 @@
     "tests:unit": "mocha"
   },
   "lint-staged": {
-    "*.(js|json)": [
+    "*.(json)": [
       "prettier --write"
     ],
     "*.js": [
